@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  font-size: 175%;
+}
+.text-container {
+  border: 2px solid #000;
+  margin: 10px;
+  background-color: grey;
+  position: relative;
+}
+.title {
+  text-align: center;
+  width: 30%;
+  padding: 5px 10px;
+  float: right;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-size: 125%;
+}
+.contents {
+  clear: right;
+  padding: 10px;
+}
+#sec1 .title{
+  background-color: pink;
+}
+#sec2 .title{
+  background-color: red;
+  color: #fff;
+}
+#sec3 .title{
+  background-color: yellow;
+}
+@media (min-width: 992px) {
+    #sec1, #sec2, #sec3 {
+      width: 33.33%;
+      float: left;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #sec1, #sec2 {
+    width: 50%;
+    float: left;
+  }
+  #sec3 {
+    width: 100%;
+    float: left;
+  }
+}
+@media (max-width: 767px){
+
+}
